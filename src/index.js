@@ -55,7 +55,7 @@ export const getFlooroCeil = (number) => {
     if (number%2 == 0) {
         return Math.floor(number);
     }
-    else if (number%2 !== 0) {
+    else {
         return Math.ceil(number);
     }
 };
