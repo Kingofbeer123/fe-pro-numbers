@@ -52,7 +52,7 @@ export const getFixedValue = (number, accuracy) => {
  * @returns {number}
  */
 export const getFlooroCeil = (number) => {
-    if (number%2 == 0) {
+    if (number%2 === 0) {
         return Math.floor(number);
     }
     else {
@@ -69,7 +69,7 @@ export const getFlooroCeil = (number) => {
  * @returns {number}
  */
 export const randomizer = (from, to) => {
-    from = Math.ceil(from);
-    to = Math.floor(to);
+    to = Math.ceil(to);
+    from = Math.floor(from);
     return Math.floor(Math.random() * (to - from)) + from;
 };
