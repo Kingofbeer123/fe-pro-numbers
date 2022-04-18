@@ -7,7 +7,20 @@
  * @param {number} maxSecond
  * @returns {number}
  */
-export const minMaxMultiply = (minFirst, minSecond, maxFirst, maxSecond) => {};
+export const minMaxMultiply = (minFirst, minSecond, maxFirst, maxSecond) => {
+    if (minFirst < minSecond && maxFirst < maxSecond) {
+        return minFirst*maxSecond;
+    }
+    else if (minFirst < minSecond && maxFirst > maxSecond) {
+        return minFirst*maxFirst;
+    }
+    else if (minFirst > minSecond && maxFirst < maxSecond) {
+        return minSecond*maxSecond;
+    }
+    else if (minFirst > minSecond && maxFirst > maxSecond) {
+        return minSecond*maxFirst;
+    }
+};
 
 /**
  * Функция принимает один числовой аргумент, это радиус круга. Функция должна
