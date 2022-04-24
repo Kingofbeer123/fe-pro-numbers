@@ -53,7 +53,7 @@ export const getFixedValue = (number, accuracy) => {
  */
 export const getFlooroCeil = (number) => {
     let result = 0;
-    if (math.trunc(number) % 2 === 0) {
+    if (Math.trunc(number) % 2 === 0) {
         result = Math.floor(number);
     }
     else {
