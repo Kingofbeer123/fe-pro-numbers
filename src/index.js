@@ -52,12 +52,14 @@ export const getFixedValue = (number, accuracy) => {
  * @returns {number}
  */
 export const getFlooroCeil = (number) => {
+    let result = 0;
     if (math.trunc(number) % 2 === 0) {
-        return Math.floor(number);
+        result = Math.floor(number);
     }
     else {
-        return Math.ceil(number);
+        result = Math.ceil(number);
     }
+    return result;
 };
 
 /**
